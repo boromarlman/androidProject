@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">わいわいチャット</string>
+    <string name="action_logout">ログアウト</string>
+    <string name="chat_input_hint">入力してください</string>
+    <string name="chat_post_button">送信</string>
+    <string name="message_fetch_error">メッセージの取得に失敗しました。</string>
+    <string name="message_sent_error">メッセージの送信に失敗しました。</string>
+    <string name="message_remove_error">メッセージの削除に失敗しました。</string>
+    <string name="image_tap_to_select">画像を選択してください。</string>
+    <string name="image_upload_error">画像のアップロードに失敗しました。</string>
+    <string name="dialog_title_delete_message">メッセージの削除</string>
+    <string name="dialog_message_delete_message">選択したメッセージを削除しますか？</string>
+    <string name="dialog_title_delete_image">画像の削除</string>
+    <string name="dialog_message_delete_image">選択した画像を削除しますか？</string>
+    <string name="ok">はい</string>
+    <string name="cancel">いいえ</string>
+</resources>

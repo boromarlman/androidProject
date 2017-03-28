@@ -1,0 +1,59 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'me.tatarka:gradle-retrolambda:3.5.0'
+        classpath 'com.google.gms:google-services:3.0.0'
+        classpath "io.realm:realm-gradle-plugin:2.2.1"
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.fabric.io/public' }
+    }
+}
+
+// Version
+def version_major = 1
+def version_minor = 5
+def version_patch = 0
+
+project.ext {
+    packageName = 'us.shiroyama.android.firebaserealtimechat'
+
+    compileSdkVersion = 25
+    minSdkVersion = 16
+    minSdkVersionDev = 21
+    targetSdkVersion = compileSdkVersion
+
+    supportLibVersion = '25.1.1'
+    firebaseLibVersion = '10.0.1'
+    daggerVersion = '2.9'
+    butterKnifeVersion = '8.5.1'
+
+    versionCode = {
+        return version_major * 10000 + version_minor * 100 + version_patch
+    }
+
+    versionName = {
+        return "${version_major}.${version_minor}.${version_patch}"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

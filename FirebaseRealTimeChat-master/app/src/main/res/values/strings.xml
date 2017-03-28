@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Firebase RealTime Chat</string>
+    <string name="action_logout">Logout</string>
+    <string name="chat_input_hint">Input here…</string>
+    <string name="chat_post_button">POST</string>
+    <string name="message_fetch_error">Failed to fetch messages.</string>
+    <string name="message_sent_error">Failed to send message.</string>
+    <string name="message_remove_error">Failed to delete message.</string>
+    <string name="image_tap_to_select">Tap to select.</string>
+    <string name="image_upload_error">Failed to upload image.</string>
+    <string name="dialog_title_delete_message">Delete Message</string>
+    <string name="dialog_message_delete_message">Do you delete selected message?</string>
+    <string name="dialog_title_delete_image">Delete Image</string>
+    <string name="dialog_message_delete_image">Do you delete selected image?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+</resources>

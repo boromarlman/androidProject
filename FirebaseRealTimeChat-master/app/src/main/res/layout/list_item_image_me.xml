@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end|center_vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <com.github.curioustechizen.ago.RelativeTimeTextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textColor="@color/chat_list_item_timestamp_color"
+        android:textSize="@dimen/chat_timestamp_text_size"
+        tools:text="Just Now" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginRight="-6dp"
+        android:background="@drawable/bg_balloon"
+        android:padding="8dp" />
+
+    <View
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@android:color/white"
+        android:rotation="45" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        tools:src="@drawable/tw__composer_logo_blue" />
+
+</LinearLayout>
